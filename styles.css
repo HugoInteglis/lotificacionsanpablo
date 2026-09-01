@@ -101,7 +101,7 @@ img { max-width: 100%; display: block; }
   margin-right: auto;
 }
 .brand strong { font-size: 1rem; }
-.brand-icon { width: 32px; height: 32px; }
+.brand-icon { height: 36px; width: auto; }
 
 .nav {
   display: flex;
@@ -353,7 +353,7 @@ h2.center { text-align: center; max-width: 32ch; margin: 0 auto 3rem; }
   font-size: 0.85rem;
 }
 .brand-footer { color: var(--text-light); font-weight: 600; font-size: 0.95rem; }
-.brand-footer .brand-icon { width: 26px; height: 26px; }
+.brand-footer .brand-icon { height: 28px; width: auto; }
 
 /* ---------- Floating WhatsApp ---------- */
 .wa-float {
