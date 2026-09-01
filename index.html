@@ -8,8 +8,8 @@
 <link rel="icon" href="favicon.png?v=2" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=8">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=9">
 </head>
 <body>
 
@@ -29,7 +29,7 @@
         <a href="#contacto">Contacto</a>
       </nav>
 
-      <a class="btn btn-whatsapp header-cta" id="wa-header" target="_blank" rel="noopener">Escríbenos</a>
+      <a class="btn btn-whatsapp header-cta wa-trigger" id="wa-header" target="_blank" rel="noopener">Escríbenos</a>
 
       <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -41,10 +41,11 @@
   <section class="hero" style="background-image: url('media/aerea-ciudad.jpg');">
     <div class="hero-overlay"></div>
     <div class="wrap hero-content">
+      <p class="tag-pill">🔥 Financiamiento propio disponible</p>
       <p class="eyebrow">Lotificación en Sector ICAN</p>
-      <h1>Tu terreno, tu futuro, tu libertad</h1>
+      <h1>Tu terreno, tu futuro, <span class="text-pop">tu libertad</span></h1>
       <p class="hero-sub">Lotes de 180 m² con financiamiento propio, hasta 24 meses sin interés y reserva desde Q1,000.</p>
-      <a class="btn btn-whatsapp btn-lg" id="wa-hero" target="_blank" rel="noopener">Consulta por WhatsApp</a>
+      <a class="btn btn-whatsapp btn-lg btn-pulse wa-trigger" id="wa-hero" target="_blank" rel="noopener">Consulta por WhatsApp</a>
 
       <div class="stat-row">
         <div class="stat"><strong>180 m²</strong><span>Lotes de 9 × 20</span></div>
@@ -60,32 +61,32 @@
       <p class="kicker center">Financiamiento propio</p>
       <h2 class="center">Haz realidad el sueño de tener tu propio terreno</h2>
 
-      <div class="amenities-grid">
+      <div class="amenities-grid reveal">
         <div class="amenity-card highlight">
-          <span class="amenity-icon">🗓️</span>
+          <span class="icon-badge badge-green">🗓️</span>
           <h3>Hasta 24 meses</h3>
           <p>Sin interés, con financiamiento directo de la lotificación.</p>
         </div>
         <div class="amenity-card highlight">
-          <span class="amenity-icon">💰</span>
+          <span class="icon-badge badge-coral">💰</span>
           <h3>Reserva con Q1,000</h3>
           <p>Aparta tu lote hoy mismo con un solo pago inicial.</p>
         </div>
         <div class="amenity-card highlight">
-          <span class="amenity-icon">🤝</span>
+          <span class="icon-badge badge-gold">🤝</span>
           <h3>Enganche del 15%</h3>
           <p>Un enganche accesible para comenzar a construir tu patrimonio.</p>
         </div>
       </div>
       <p class="center financing-cta">
-        <a class="btn btn-whatsapp" id="wa-financiamiento" target="_blank" rel="noopener">Pregunta por el financiamiento</a>
+        <a class="btn btn-whatsapp wa-trigger" id="wa-financiamiento" target="_blank" rel="noopener">Pregunta por el financiamiento</a>
       </p>
     </div>
   </section>
 
   <!-- ===== EL PROYECTO ===== -->
   <section class="section section-alt" id="proyecto">
-    <div class="wrap section-grid">
+    <div class="wrap section-grid reveal">
       <div class="section-media" style="background-image: url('media/aerea-terreno.jpg');" aria-hidden="true"></div>
       <div class="section-copy">
         <p class="kicker">El Proyecto</p>
@@ -99,22 +100,23 @@
           <li>Financiamiento propio, hasta 24 meses sin interés</li>
           <li>Reserva tu lote con Q1,000 y enganche del 15%</li>
         </ul>
-        <a class="btn btn-outline" id="wa-proyecto" target="_blank" rel="noopener">Más información</a>
+        <a class="btn btn-outline wa-trigger" id="wa-proyecto" target="_blank" rel="noopener">Más información</a>
       </div>
     </div>
   </section>
 
   <!-- ===== UBICACIÓN ===== -->
   <section class="section" id="ubicacion">
-    <div class="wrap section-grid reverse">
+    <div class="wrap section-grid reverse reveal">
       <div class="section-copy">
         <p class="kicker">Ubicación</p>
         <h2>A solo 4 minutos de Despensa Familiar</h2>
+        <p class="locate-pill">📍 A 4 minutos de <strong>Despensa Familiar</strong></p>
         <p>
           Lotificación San Pablo está ubicada por <strong>Faja 12, Sector ICAN</strong>, a solo 4 minutos
           de Despensa Familiar, con fácil acceso y cerca de todo lo que tu familia necesita.
         </p>
-        <a class="btn btn-outline" id="wa-ubicacion" target="_blank" rel="noopener">Pide la ubicación exacta</a>
+        <a class="btn btn-outline wa-trigger" id="wa-ubicacion" target="_blank" rel="noopener">Pide la ubicación exacta</a>
       </div>
       <div class="section-media" style="background-image: url('media/avance-calle-poster.jpg');" aria-hidden="true"></div>
     </div>
@@ -126,44 +128,44 @@
       <p class="kicker center">Servicios y amenidades</p>
       <h2 class="center">Todo lo que tu nuevo terreno necesita</h2>
 
-      <div class="amenities-grid">
+      <div class="amenities-grid reveal">
         <div class="amenity-card">
-          <span class="amenity-icon">💧</span>
+          <span class="icon-badge badge-green">💧</span>
           <h3>Agua</h3>
           <p>Servicio de agua para cada lote.</p>
         </div>
         <div class="amenity-card">
-          <span class="amenity-icon">⚡</span>
+          <span class="icon-badge badge-gold">⚡</span>
           <h3>Luz</h3>
           <p>Energía eléctrica instalada en todo el proyecto.</p>
         </div>
         <div class="amenity-card">
-          <span class="amenity-icon">🚰</span>
+          <span class="icon-badge badge-coral">🚰</span>
           <h3>Drenajes</h3>
           <p>Sistema de drenajes en toda la lotificación.</p>
         </div>
         <div class="amenity-card">
-          <span class="amenity-icon">🛣️</span>
+          <span class="icon-badge badge-green">🛣️</span>
           <h3>Calles amplias</h3>
           <p>Vías de acceso amplias dentro de todo el proyecto.</p>
         </div>
         <div class="amenity-card">
-          <span class="amenity-icon">🛠️</span>
+          <span class="icon-badge badge-gold">🛠️</span>
           <h3>Pozo mecánico</h3>
           <p>Pozo propio para abastecer la lotificación.</p>
         </div>
         <div class="amenity-card">
-          <span class="amenity-icon">♻️</span>
+          <span class="icon-badge badge-coral">♻️</span>
           <h3>Planta de tratamiento</h3>
           <p>Tratamiento de aguas residuales para todo el proyecto.</p>
         </div>
         <div class="amenity-card">
-          <span class="amenity-icon">🍖</span>
+          <span class="icon-badge badge-green">🍖</span>
           <h3>Área recreativa</h3>
           <p>Espacio con churrasqueras para compartir en familia.</p>
         </div>
         <div class="amenity-card">
-          <span class="amenity-icon">🏀</span>
+          <span class="icon-badge badge-gold">🏀</span>
           <h3>Cancha polideportiva</h3>
           <p>Espacio deportivo para todos en la lotificación.</p>
         </div>
@@ -178,7 +180,7 @@
       <h2 class="center">Un proyecto real, en construcción</h2>
       <p class="center avance-sub">Así va avanzando Lotificación San Pablo. Mira el terreno y las calles en construcción.</p>
 
-      <div class="video-grid">
+      <div class="video-grid reveal">
         <div class="video-card">
           <video controls preload="none" poster="media/avance-aereo-poster.jpg">
             <source src="media/avance-aereo.mp4" type="video/mp4">
@@ -202,7 +204,7 @@
       </div>
 
       <p class="center">
-        <a class="btn btn-whatsapp" id="wa-avance" target="_blank" rel="noopener">Hablemos por WhatsApp</a>
+        <a class="btn btn-whatsapp wa-trigger" id="wa-avance" target="_blank" rel="noopener">Hablemos por WhatsApp</a>
       </p>
     </div>
   </section>
@@ -212,7 +214,7 @@
     <div class="wrap">
       <h2>¿Listo para conocer tu lote?</h2>
       <p>Escríbenos por WhatsApp con cualquiera de nuestros asesores de venta.</p>
-      <div class="contact-buttons">
+      <div class="contact-buttons reveal">
         <a class="btn btn-whatsapp btn-lg" id="wa-contact-1" target="_blank" rel="noopener">Asesor 5494-6629</a>
         <a class="btn btn-whatsapp btn-lg" id="wa-contact-2" target="_blank" rel="noopener">Asesor 4836-0597</a>
       </div>
@@ -230,12 +232,12 @@
   </footer>
 
   <!-- ===== BOTÓN FLOTANTE WHATSAPP ===== -->
-  <a class="wa-float" id="wa-float" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+  <a class="wa-float wa-trigger" id="wa-float" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
     <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor" aria-hidden="true">
       <path d="M16.02 3C9.4 3 4 8.4 4 15.02c0 2.35.66 4.55 1.8 6.43L3 29l7.75-2.7a12.9 12.9 0 0 0 5.27 1.12h.01c6.62 0 12.02-5.4 12.02-12.02C28.05 8.4 22.65 3 16.02 3zm7.06 17.14c-.3.85-1.72 1.63-2.38 1.72-.61.09-1.38.13-2.23-.14a20.4 20.4 0 0 1-1.97-.73c-3.47-1.5-5.74-4.98-5.91-5.21-.17-.23-1.42-1.88-1.42-3.59 0-1.71.9-2.55 1.22-2.9.32-.35.7-.43.93-.43.24 0 .47.01.68.01.22.01.51-.08.8.61.3.7.99 2.42 1.08 2.6.09.17.15.38.03.61-.12.23-.18.38-.36.58-.18.21-.38.46-.54.62-.18.18-.37.37-.16.72.21.35.93 1.53 1.99 2.48 1.37 1.22 2.52 1.6 2.87 1.78.35.18.56.15.76-.09.21-.24.88-1.02 1.12-1.37.23-.35.47-.29.79-.17.32.12 2.03.96 2.38 1.13.35.18.58.26.67.41.09.15.09.85-.21 1.7z"/>
     </svg>
   </a>
 
-  <script src="script.js?v=3"></script>
+  <script src="script.js?v=4"></script>
 </body>
 </html>
