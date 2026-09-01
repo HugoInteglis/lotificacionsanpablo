@@ -4,7 +4,7 @@
     {
       "name": "static-site",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "4173", "--directory", "/Users/hugo/Desktop/INTEGLIS/ lotificacionsanpablo.com"],
+      "runtimeArgs": ["/tmp/lsp-preview/serve.py"],
       "port": 4173
     }
   ]
