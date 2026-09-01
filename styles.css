@@ -142,10 +142,16 @@ img { max-width: 100%; display: block; }
   display: flex;
   align-items: center;
   color: var(--text-light);
-  background:
-    linear-gradient(rgba(16,50,31,0.55), rgba(16,50,31,0.75)),
-    linear-gradient(135deg, #1f5f3f 0%, #10321f 60%, #0b2417 100%);
+  background-color: var(--green-dark);
+  background-size: cover;
+  background-position: center;
   overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(16,50,31,0.65), rgba(16,50,31,0.85));
 }
 
 .hero-content { position: relative; z-index: 1; padding-top: 4rem; padding-bottom: 4rem; }
@@ -226,20 +232,10 @@ h2.center { text-align: center; max-width: 32ch; margin: 0 auto 3rem; }
 .section-media {
   aspect-ratio: 4 / 3;
   border-radius: var(--radius);
-  background: linear-gradient(135deg, #cfe3d4, #9dc2a8);
+  background-color: #9dc2a8;
+  background-size: cover;
+  background-position: center;
   box-shadow: var(--shadow);
-}
-
-.map-placeholder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: repeating-linear-gradient(45deg, #e4e0d2, #e4e0d2 10px, #ded9c8 10px, #ded9c8 20px);
-  color: var(--muted);
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  letter-spacing: 0.1em;
 }
 
 .check-list {
@@ -281,6 +277,54 @@ h2.center { text-align: center; max-width: 32ch; margin: 0 auto 3rem; }
 .amenity-icon { font-size: 1.8rem; }
 .amenity-card h3 { font-size: 1.05rem; margin: 0.75rem 0 0.4rem; font-family: "Inter"; font-weight: 600; }
 .amenity-card p { margin: 0; font-size: 0.92rem; }
+
+.amenity-card.highlight {
+  text-align: center;
+  border-top: 4px solid var(--gold);
+}
+.amenity-card.highlight .amenity-icon { font-size: 2.2rem; }
+.amenity-card.highlight h3 { font-size: 1.15rem; }
+
+.financing-cta { margin-top: 2.5rem; }
+
+/* ---------- Video / Avance de obra ---------- */
+.avance-sub {
+  max-width: 40ch;
+  margin: -2rem auto 3rem;
+}
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.75rem;
+  margin-bottom: 2.5rem;
+}
+.video-card {
+  background: rgba(248, 245, 238, 0.05);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.video-card video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: block;
+  background: #000;
+}
+.video-card p {
+  margin: 0;
+  padding: 0.9rem 1.1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgba(248, 245, 238, 0.85);
+}
+
+/* ---------- Contact buttons ---------- */
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
 
 /* ---------- CTA final ---------- */
 .cta-final {
@@ -334,6 +378,7 @@ h2.center { text-align: center; max-width: 32ch; margin: 0 auto 3rem; }
   .section-grid.reverse .section-copy,
   .section-grid.reverse .section-media { order: initial; }
   .amenities-grid { grid-template-columns: repeat(2, 1fr); }
+  .video-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 720px) {

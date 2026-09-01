@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lotificación San Pablo — Lotes en venta</title>
-<meta name="description" content="Lotificación San Pablo. Lotes urbanizados en una ubicación privilegiada. Contáctanos por WhatsApp.">
+<title>Lotificación San Pablo — Lotes en venta con financiamiento propio</title>
+<meta name="description" content="Lotificación San Pablo, Sector ICAN. Lotes de 180 m² con financiamiento propio, hasta 24 meses sin interés y reserva desde Q1,000. Contáctanos por WhatsApp.">
 <link rel="icon" href="logo.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=2">
+<link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
 
@@ -22,10 +22,11 @@
       </a>
 
       <nav class="nav" id="nav">
+        <a href="#financiamiento">Financiamiento</a>
         <a href="#proyecto">El Proyecto</a>
         <a href="#ubicacion">Ubicación</a>
-        <a href="#amenidades">Amenidades</a>
-        <a href="#porque">Por qué elegirnos</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#avance">Avance de obra</a>
         <a href="#contacto">Contacto</a>
       </nav>
 
@@ -38,38 +39,66 @@
   </header>
 
   <!-- ===== HERO ===== -->
-  <section class="hero">
+  <section class="hero" style="background-image: url('media/avance-aereo-poster.jpg');">
     <div class="hero-overlay"></div>
     <div class="wrap hero-content">
-      <p class="eyebrow">Lotificación en <!-- EDITAR: ciudad/país --><span data-edit>[Ciudad, País]</span></p>
-      <h1>Tu lote, tu nuevo comienzo</h1>
-      <p class="hero-sub">Lotes urbanizados con todos los servicios, en una zona de gran plusvalía y fácil acceso.</p>
+      <p class="eyebrow">Lotificación en Sector ICAN</p>
+      <h1>Tu terreno, tu futuro, tu libertad</h1>
+      <p class="hero-sub">Lotes de 180 m² con financiamiento propio, hasta 24 meses sin interés y reserva desde Q1,000.</p>
       <a class="btn btn-whatsapp btn-lg" id="wa-hero" target="_blank" rel="noopener">Consulta por WhatsApp</a>
 
       <div class="stat-row">
-        <div class="stat"><strong data-edit>—</strong><span>Lotes disponibles</span></div>
-        <div class="stat"><strong data-edit>— m²</strong><span>Área desde</span></div>
-        <div class="stat"><strong data-edit>—</strong><span>Servicios incluidos</span></div>
+        <div class="stat"><strong>180 m²</strong><span>Lotes de 9 × 20</span></div>
+        <div class="stat"><strong>24 meses</strong><span>Sin interés</span></div>
+        <div class="stat"><strong>15%</strong><span>Enganche</span></div>
       </div>
     </div>
   </section>
 
+  <!-- ===== FINANCIAMIENTO ===== -->
+  <section class="section" id="financiamiento">
+    <div class="wrap">
+      <p class="kicker center">Financiamiento propio</p>
+      <h2 class="center">Haz realidad el sueño de tener tu propio terreno</h2>
+
+      <div class="amenities-grid">
+        <div class="amenity-card highlight">
+          <span class="amenity-icon">🗓️</span>
+          <h3>Hasta 24 meses</h3>
+          <p>Sin interés, con financiamiento directo de la lotificación.</p>
+        </div>
+        <div class="amenity-card highlight">
+          <span class="amenity-icon">💰</span>
+          <h3>Reserva con Q1,000</h3>
+          <p>Aparta tu lote hoy mismo con un solo pago inicial.</p>
+        </div>
+        <div class="amenity-card highlight">
+          <span class="amenity-icon">🤝</span>
+          <h3>Enganche del 15%</h3>
+          <p>Un enganche accesible para comenzar a construir tu patrimonio.</p>
+        </div>
+      </div>
+      <p class="center financing-cta">
+        <a class="btn btn-whatsapp" id="wa-financiamiento" target="_blank" rel="noopener">Pregunta por el financiamiento</a>
+      </p>
+    </div>
+  </section>
+
   <!-- ===== EL PROYECTO ===== -->
-  <section class="section" id="proyecto">
+  <section class="section section-alt" id="proyecto">
     <div class="wrap section-grid">
-      <div class="section-media" aria-hidden="true"></div>
+      <div class="section-media" style="background-image: url('media/avance-calle-poster.jpg');" aria-hidden="true"></div>
       <div class="section-copy">
         <p class="kicker">El Proyecto</p>
-        <h2>Un lugar pensado para tu familia</h2>
-        <p data-edit>
-          Lotificación San Pablo es un nuevo desarrollo urbanístico que ofrece lotes listos para construir,
-          con calles, drenajes, energía eléctrica y agua potable. Un espacio pensado para quienes buscan
-          tranquilidad, seguridad y una excelente inversión a largo plazo.
+        <h2>Lotes de 9 × 20 metros</h2>
+        <p>
+          Lotificación San Pablo ofrece lotes de <strong>180 m²</strong>, listos para que construyas tu
+          patrimonio, con calles amplias y todos los servicios básicos dentro del proyecto.
         </p>
         <ul class="check-list">
-          <li>Escrituración y trámites legales incluidos</li>
-          <li>Financiamiento directo disponible</li>
-          <li>Áreas verdes y espacios comunes</li>
+          <li>Lotes de 9 × 20 m (180 m²)</li>
+          <li>Financiamiento propio, hasta 24 meses sin interés</li>
+          <li>Reserva tu lote con Q1,000 y enganche del 15%</li>
         </ul>
         <a class="btn btn-outline" id="wa-proyecto" target="_blank" rel="noopener">Más información</a>
       </div>
@@ -77,79 +106,97 @@
   </section>
 
   <!-- ===== UBICACIÓN ===== -->
-  <section class="section section-alt" id="ubicacion">
+  <section class="section" id="ubicacion">
     <div class="wrap section-grid reverse">
       <div class="section-copy">
         <p class="kicker">Ubicación</p>
-        <h2>Cerca de todo lo que necesitas</h2>
-        <p data-edit>
-          Ubicado en un punto estratégico de <span data-edit>[ciudad/zona]</span>, con acceso directo a las
-          principales vías, a minutos de centros comerciales, escuelas y servicios de salud.
+        <h2>A solo 4 minutos de Despensa Familiar</h2>
+        <p>
+          Lotificación San Pablo está ubicada por <strong>Faja 12, Sector ICAN</strong>, a solo 4 minutos
+          de Despensa Familiar, con fácil acceso y cerca de todo lo que tu familia necesita.
         </p>
         <a class="btn btn-outline" id="wa-ubicacion" target="_blank" rel="noopener">Pide la ubicación exacta</a>
       </div>
-      <div class="section-media map-placeholder" aria-hidden="true">
-        <span>Mapa próximamente</span>
-      </div>
+      <div class="section-media" style="background-image: url('media/avance-aereo-poster.jpg');" aria-hidden="true"></div>
     </div>
   </section>
 
-  <!-- ===== AMENIDADES ===== -->
-  <section class="section" id="amenidades">
+  <!-- ===== SERVICIOS / AMENIDADES ===== -->
+  <section class="section section-alt" id="servicios">
     <div class="wrap">
-      <p class="kicker center">Amenidades</p>
-      <h2 class="center">Todo lo que tu nuevo hogar necesita</h2>
+      <p class="kicker center">Servicios y amenidades</p>
+      <h2 class="center">Todo lo que tu nuevo terreno necesita</h2>
 
       <div class="amenities-grid">
         <div class="amenity-card">
-          <span class="amenity-icon">🛡️</span>
-          <h3>Seguridad</h3>
-          <p data-edit>Garita de acceso controlado para tu tranquilidad.</p>
-        </div>
-        <div class="amenity-card">
-          <span class="amenity-icon">🛣️</span>
-          <h3>Calles pavimentadas</h3>
-          <p data-edit>Vías de acceso en buen estado dentro de todo el proyecto.</p>
-        </div>
-        <div class="amenity-card">
           <span class="amenity-icon">💧</span>
-          <h3>Agua potable</h3>
-          <p data-edit>Servicio de agua conectado a cada lote.</p>
+          <h3>Agua</h3>
+          <p>Servicio de agua para cada lote.</p>
         </div>
         <div class="amenity-card">
           <span class="amenity-icon">⚡</span>
-          <h3>Energía eléctrica</h3>
-          <p data-edit>Red eléctrica instalada en todo el desarrollo.</p>
-        </div>
-        <div class="amenity-card">
-          <span class="amenity-icon">🌳</span>
-          <h3>Áreas verdes</h3>
-          <p data-edit>Espacios comunes para el descanso y la familia.</p>
+          <h3>Luz</h3>
+          <p>Energía eléctrica instalada en todo el proyecto.</p>
         </div>
         <div class="amenity-card">
           <span class="amenity-icon">🚰</span>
           <h3>Drenajes</h3>
-          <p data-edit>Sistema de drenaje completo en el proyecto.</p>
+          <p>Sistema de drenajes en toda la lotificación.</p>
+        </div>
+        <div class="amenity-card">
+          <span class="amenity-icon">🛣️</span>
+          <h3>Calles amplias</h3>
+          <p>Vías de acceso amplias dentro de todo el proyecto.</p>
+        </div>
+        <div class="amenity-card">
+          <span class="amenity-icon">🛠️</span>
+          <h3>Pozo mecánico</h3>
+          <p>Pozo propio para abastecer la lotificación.</p>
+        </div>
+        <div class="amenity-card">
+          <span class="amenity-icon">♻️</span>
+          <h3>Planta de tratamiento</h3>
+          <p>Tratamiento de aguas residuales para todo el proyecto.</p>
+        </div>
+        <div class="amenity-card">
+          <span class="amenity-icon">🍖</span>
+          <h3>Área recreativa</h3>
+          <p>Espacio con churrasqueras para compartir en familia.</p>
+        </div>
+        <div class="amenity-card">
+          <span class="amenity-icon">🏀</span>
+          <h3>Cancha polideportiva</h3>
+          <p>Espacio deportivo para todos en la lotificación.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== POR QUÉ ELEGIRNOS ===== -->
-  <section class="section section-dark" id="porque">
-    <div class="wrap section-grid">
-      <div class="section-copy">
-        <p class="kicker">Por qué elegirnos</p>
-        <h2>Confianza y transparencia</h2>
-        <ul class="check-list check-list-light">
-          <li>Escritura pública ante notario</li>
-          <li>Atención personalizada durante todo el proceso</li>
-          <li>Proyecto con todos los servicios básicos</li>
-          <li>Opciones de financiamiento a tu medida</li>
-        </ul>
-        <a class="btn btn-whatsapp" id="wa-porque" target="_blank" rel="noopener">Hablemos por WhatsApp</a>
+  <!-- ===== AVANCE DE OBRA ===== -->
+  <section class="section section-dark" id="avance">
+    <div class="wrap">
+      <p class="kicker center">Avance de obra</p>
+      <h2 class="center">Un proyecto real, en construcción</h2>
+      <p class="center avance-sub">Así va avanzando Lotificación San Pablo. Mira el terreno y las calles en construcción.</p>
+
+      <div class="video-grid">
+        <div class="video-card">
+          <video controls preload="none" poster="media/avance-aereo-poster.jpg">
+            <source src="media/avance-aereo.mp4" type="video/mp4">
+          </video>
+          <p>Vista aérea del proyecto</p>
+        </div>
+        <div class="video-card">
+          <video controls preload="none" poster="media/avance-calle-poster.jpg">
+            <source src="media/avance-calle.mp4" type="video/mp4">
+          </video>
+          <p>Avance de calles</p>
+        </div>
       </div>
-      <div class="section-media" aria-hidden="true"></div>
+
+      <p class="center">
+        <a class="btn btn-whatsapp" id="wa-avance" target="_blank" rel="noopener">Hablemos por WhatsApp</a>
+      </p>
     </div>
   </section>
 
@@ -157,8 +204,11 @@
   <section class="cta-final" id="contacto">
     <div class="wrap">
       <h2>¿Listo para conocer tu lote?</h2>
-      <p>Escríbenos por WhatsApp y con gusto te atendemos.</p>
-      <a class="btn btn-whatsapp btn-lg" id="wa-cta" target="_blank" rel="noopener">Escríbenos ahora</a>
+      <p>Escríbenos por WhatsApp con cualquiera de nuestros asesores de venta.</p>
+      <div class="contact-buttons">
+        <a class="btn btn-whatsapp btn-lg" id="wa-contact-1" target="_blank" rel="noopener">Asesor 5494-6629</a>
+        <a class="btn btn-whatsapp btn-lg" id="wa-contact-2" target="_blank" rel="noopener">Asesor 4836-0597</a>
+      </div>
     </div>
   </section>
 
@@ -169,7 +219,7 @@
         <img src="logo.svg" alt="" class="brand-icon">
         <span>Lotificación San Pablo</span>
       </div>
-      <p>&copy; <span id="year"></span> Lotificación San Pablo. Todos los derechos reservados.</p>
+      <p>&copy; <span id="year"></span> Lotificación San Pablo. Tu terreno, tu futuro, tu libertad.</p>
     </div>
   </footer>
 
@@ -180,6 +230,6 @@
     </svg>
   </a>
 
-  <script src="script.js?v=2"></script>
+  <script src="script.js?v=3"></script>
 </body>
 </html>

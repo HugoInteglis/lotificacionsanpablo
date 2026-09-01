@@ -1,11 +1,20 @@
-// EDITAR: número de WhatsApp en formato internacional sin "+" ni espacios (ej. "50212345678")
-const WHATSAPP_NUMBER = "50200000000";
+// Números de WhatsApp de los asesores de venta (Guatemala, código 502)
+const WHATSAPP_PRIMARY = "50254946629"; // 5494-6629
+const WHATSAPP_SECONDARY = "50248360597"; // 4836-0597
 const WHATSAPP_MESSAGE = "Hola, quisiera más información sobre Lotificación San Pablo.";
 
-const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
+function waLink(number) {
+  return `https://wa.me/${number}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
+}
 
 document.querySelectorAll('[id^="wa-"]').forEach((el) => {
-  el.href = waLink;
+  if (el.id === "wa-contact-1") {
+    el.href = waLink(WHATSAPP_PRIMARY);
+  } else if (el.id === "wa-contact-2") {
+    el.href = waLink(WHATSAPP_SECONDARY);
+  } else {
+    el.href = waLink(WHATSAPP_PRIMARY);
+  }
 });
 
 document.getElementById("year").textContent = new Date().getFullYear();
