@@ -3,23 +3,183 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lotificación San Pablo</title>
-<meta name="description" content="Lotificación San Pablo — Próximamente.">
+<title>Lotificación San Pablo — Lotes en venta</title>
+<meta name="description" content="Lotificación San Pablo. Lotes urbanizados en una ubicación privilegiada. Contáctanos por WhatsApp.">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="hero">
-    <img src="logo.svg" alt="Lotificación San Pablo" class="logo">
-    <h1>Lotificación San Pablo</h1>
-    <p class="subtitle">Estamos preparando esta página.</p>
-    <p class="soon">Próximamente</p>
-    <a class="contact" href="mailto:hugo@integlis.com">Contáctanos</a>
-  </main>
-  <footer>
-    <p>&copy; <span id="year"></span> Lotificación San Pablo</p>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">
+        <img src="logo.svg" alt="" class="brand-icon">
+        <span>Lotificación<br><strong>San Pablo</strong></span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#proyecto">El Proyecto</a>
+        <a href="#ubicacion">Ubicación</a>
+        <a href="#amenidades">Amenidades</a>
+        <a href="#porque">Por qué elegirnos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <a class="btn btn-whatsapp header-cta" id="wa-header" target="_blank" rel="noopener">Escríbenos</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="wrap hero-content">
+      <p class="eyebrow">Lotificación en <!-- EDITAR: ciudad/país --><span data-edit>[Ciudad, País]</span></p>
+      <h1>Tu lote, tu nuevo comienzo</h1>
+      <p class="hero-sub">Lotes urbanizados con todos los servicios, en una zona de gran plusvalía y fácil acceso.</p>
+      <a class="btn btn-whatsapp btn-lg" id="wa-hero" target="_blank" rel="noopener">Consulta por WhatsApp</a>
+
+      <div class="stat-row">
+        <div class="stat"><strong data-edit>—</strong><span>Lotes disponibles</span></div>
+        <div class="stat"><strong data-edit>— m²</strong><span>Área desde</span></div>
+        <div class="stat"><strong data-edit>—</strong><span>Servicios incluidos</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EL PROYECTO ===== -->
+  <section class="section" id="proyecto">
+    <div class="wrap section-grid">
+      <div class="section-media" aria-hidden="true"></div>
+      <div class="section-copy">
+        <p class="kicker">El Proyecto</p>
+        <h2>Un lugar pensado para tu familia</h2>
+        <p data-edit>
+          Lotificación San Pablo es un nuevo desarrollo urbanístico que ofrece lotes listos para construir,
+          con calles, drenajes, energía eléctrica y agua potable. Un espacio pensado para quienes buscan
+          tranquilidad, seguridad y una excelente inversión a largo plazo.
+        </p>
+        <ul class="check-list">
+          <li>Escrituración y trámites legales incluidos</li>
+          <li>Financiamiento directo disponible</li>
+          <li>Áreas verdes y espacios comunes</li>
+        </ul>
+        <a class="btn btn-outline" id="wa-proyecto" target="_blank" rel="noopener">Más información</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== UBICACIÓN ===== -->
+  <section class="section section-alt" id="ubicacion">
+    <div class="wrap section-grid reverse">
+      <div class="section-copy">
+        <p class="kicker">Ubicación</p>
+        <h2>Cerca de todo lo que necesitas</h2>
+        <p data-edit>
+          Ubicado en un punto estratégico de <span data-edit>[ciudad/zona]</span>, con acceso directo a las
+          principales vías, a minutos de centros comerciales, escuelas y servicios de salud.
+        </p>
+        <a class="btn btn-outline" id="wa-ubicacion" target="_blank" rel="noopener">Pide la ubicación exacta</a>
+      </div>
+      <div class="section-media map-placeholder" aria-hidden="true">
+        <span>Mapa próximamente</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AMENIDADES ===== -->
+  <section class="section" id="amenidades">
+    <div class="wrap">
+      <p class="kicker center">Amenidades</p>
+      <h2 class="center">Todo lo que tu nuevo hogar necesita</h2>
+
+      <div class="amenities-grid">
+        <div class="amenity-card">
+          <span class="amenity-icon">🛡️</span>
+          <h3>Seguridad</h3>
+          <p data-edit>Garita de acceso controlado para tu tranquilidad.</p>
+        </div>
+        <div class="amenity-card">
+          <span class="amenity-icon">🛣️</span>
+          <h3>Calles pavimentadas</h3>
+          <p data-edit>Vías de acceso en buen estado dentro de todo el proyecto.</p>
+        </div>
+        <div class="amenity-card">
+          <span class="amenity-icon">💧</span>
+          <h3>Agua potable</h3>
+          <p data-edit>Servicio de agua conectado a cada lote.</p>
+        </div>
+        <div class="amenity-card">
+          <span class="amenity-icon">⚡</span>
+          <h3>Energía eléctrica</h3>
+          <p data-edit>Red eléctrica instalada en todo el desarrollo.</p>
+        </div>
+        <div class="amenity-card">
+          <span class="amenity-icon">🌳</span>
+          <h3>Áreas verdes</h3>
+          <p data-edit>Espacios comunes para el descanso y la familia.</p>
+        </div>
+        <div class="amenity-card">
+          <span class="amenity-icon">🚰</span>
+          <h3>Drenajes</h3>
+          <p data-edit>Sistema de drenaje completo en el proyecto.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== POR QUÉ ELEGIRNOS ===== -->
+  <section class="section section-dark" id="porque">
+    <div class="wrap section-grid">
+      <div class="section-copy">
+        <p class="kicker">Por qué elegirnos</p>
+        <h2>Confianza y transparencia</h2>
+        <ul class="check-list check-list-light">
+          <li>Escritura pública ante notario</li>
+          <li>Atención personalizada durante todo el proceso</li>
+          <li>Proyecto con todos los servicios básicos</li>
+          <li>Opciones de financiamiento a tu medida</li>
+        </ul>
+        <a class="btn btn-whatsapp" id="wa-porque" target="_blank" rel="noopener">Hablemos por WhatsApp</a>
+      </div>
+      <div class="section-media" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTO / CTA FINAL ===== -->
+  <section class="cta-final" id="contacto">
+    <div class="wrap">
+      <h2>¿Listo para conocer tu lote?</h2>
+      <p>Escríbenos por WhatsApp y con gusto te atendemos.</p>
+      <a class="btn btn-whatsapp btn-lg" id="wa-cta" target="_blank" rel="noopener">Escríbenos ahora</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="brand brand-footer">
+        <img src="logo.svg" alt="" class="brand-icon">
+        <span>Lotificación San Pablo</span>
+      </div>
+      <p>&copy; <span id="year"></span> Lotificación San Pablo. Todos los derechos reservados.</p>
+    </div>
   </footer>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+
+  <!-- ===== BOTÓN FLOTANTE WHATSAPP ===== -->
+  <a class="wa-float" id="wa-float" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+    <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor" aria-hidden="true">
+      <path d="M16.02 3C9.4 3 4 8.4 4 15.02c0 2.35.66 4.55 1.8 6.43L3 29l7.75-2.7a12.9 12.9 0 0 0 5.27 1.12h.01c6.62 0 12.02-5.4 12.02-12.02C28.05 8.4 22.65 3 16.02 3zm7.06 17.14c-.3.85-1.72 1.63-2.38 1.72-.61.09-1.38.13-2.23-.14a20.4 20.4 0 0 1-1.97-.73c-3.47-1.5-5.74-4.98-5.91-5.21-.17-.23-1.42-1.88-1.42-3.59 0-1.71.9-2.55 1.22-2.9.32-.35.7-.43.93-.43.24 0 .47.01.68.01.22.01.51-.08.8.61.3.7.99 2.42 1.08 2.6.09.17.15.38.03.61-.12.23-.18.38-.36.58-.18.21-.38.46-.54.62-.18.18-.37.37-.16.72.21.35.93 1.53 1.99 2.48 1.37 1.22 2.52 1.6 2.87 1.78.35.18.56.15.76-.09.21-.24.88-1.02 1.12-1.37.23-.35.47-.29.79-.17.32.12 2.03.96 2.38 1.13.35.18.58.26.67.41.09.15.09.85-.21 1.7z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
 </body>
 </html>
