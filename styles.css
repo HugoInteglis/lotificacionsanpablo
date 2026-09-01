@@ -86,8 +86,8 @@ img { max-width: 100%; display: block; }
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  padding-top: 0.9rem;
-  padding-bottom: 0.9rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
 }
 
 .brand {
@@ -96,7 +96,7 @@ img { max-width: 100%; display: block; }
   text-decoration: none;
   margin-right: auto;
 }
-.brand-icon { display: block; height: 46px; width: auto; }
+.brand-icon { display: block; height: 68px; width: auto; }
 
 .nav {
   display: flex;
@@ -347,7 +347,7 @@ h2.center { text-align: center; max-width: 32ch; margin: 0 auto 3rem; }
   gap: 1rem;
   font-size: 0.85rem;
 }
-.brand-footer .brand-icon { height: 34px; width: auto; }
+.brand-footer .brand-icon { height: 52px; width: auto; }
 
 /* ---------- Floating WhatsApp ---------- */
 .wa-float {
