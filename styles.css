@@ -73,6 +73,13 @@ img { max-width: 100%; display: block; }
 }
 .btn-facebook:hover { background: #0a66c2; }
 
+.btn-tiktok {
+  background: #000000;
+  color: #25f4ee;
+  box-shadow: 0 10px 24px rgba(37, 244, 238, 0.2);
+}
+.btn-tiktok:hover { background: #1a1a1a; color: white; }
+
 .btn-pulse { animation: pulse-glow 2.4s ease-in-out infinite; }
 @keyframes pulse-glow {
   0%, 100% { box-shadow: 0 10px 24px rgba(37, 211, 102, 0.4); }
