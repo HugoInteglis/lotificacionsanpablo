@@ -1,10 +1,10 @@
 // Números de WhatsApp de los asesores de venta (Guatemala, código 502)
-const WHATSAPP_PRIMARY = "50254946629"; // 5494-6629
+const WHATSAPP_PRIMARY = "50254976629"; // 5497-6629
 const WHATSAPP_SECONDARY = "50248360597"; // 4836-0597
 const WHATSAPP_MESSAGE = "Hola, quisiera más información sobre Lotificación San Pablo.";
 
 const WHATSAPP_CONTACTS = [
-  { label: "Asesor · 5494-6629", number: WHATSAPP_PRIMARY },
+  { label: "Asesor · 5497-6629", number: WHATSAPP_PRIMARY },
   { label: "Asesor · 4836-0597", number: WHATSAPP_SECONDARY },
 ];
 
