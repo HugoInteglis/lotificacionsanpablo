@@ -66,6 +66,13 @@ img { max-width: 100%; display: block; }
 }
 .btn-whatsapp:hover { background: #21bd5a; }
 
+.btn-facebook {
+  background: #1877f2;
+  color: white;
+  box-shadow: 0 10px 24px rgba(24, 119, 242, 0.4);
+}
+.btn-facebook:hover { background: #0a66c2; }
+
 .btn-pulse { animation: pulse-glow 2.4s ease-in-out infinite; }
 @keyframes pulse-glow {
   0%, 100% { box-shadow: 0 10px 24px rgba(37, 211, 102, 0.4); }
