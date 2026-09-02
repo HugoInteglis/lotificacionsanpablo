@@ -136,6 +136,34 @@ img { max-width: 100%; display: block; }
 
 .header-cta { flex-shrink: 0; }
 
+.header-socials {
+  display: flex;
+  gap: 0.75rem;
+  flex-shrink: 0;
+  align-items: center;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1877f2 0%, #25f4ee 100%);
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.social-icon:nth-child(2) {
+  background: linear-gradient(135deg, #000000 0%, #25f4ee 100%);
+}
+.social-icon:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
 .nav-toggle {
   display: none;
   flex-direction: column;
